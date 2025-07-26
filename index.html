@@ -64,6 +64,23 @@
         .nav-link.active {
             color: #FFFFFF;
         }
+        
+        /* Button styles for prominent CTAs */
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            border-bottom: none;
+        }
+        .cta-button:hover {
+            background-color: #cccccc;
+            color: #000000;
+        }
 
     </style>
 </head>
@@ -91,6 +108,17 @@
             <section class="content-section">
                 <h2 class="section-heading">About The Project</h2>
                 <p>BLACK is a digital ecosystem making academic life simpler and more connected. Our team is passionate about creating innovative, open-source solutions that push the boundaries of what's possible for students. We centralize your notes, tasks, and community in one clean, powerful platform, built by students, for students.</p>
+            </section>
+            
+            <!-- Get The App Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Get The App</h2>
+                <p>Download the latest version of BLACK for Android directly from the Google Play Store.</p>
+                <div class="mt-6">
+                    <a href="https://play.google.com/store/apps/details?id=com.loveucifer.black&pli=1" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        Download on Google Play
+                    </a>
+                </div>
             </section>
 
             <!-- Core Philosophy Section -->
@@ -127,13 +155,22 @@
             <!-- Technology Stack Section -->
             <section class="content-section">
                 <h2 class="section-heading">Technology Stack</h2>
-                <p>BLACK is built with a modern, scalable, and cross-platform technology stack, chosen for performance and developer experience.</p>
+                <p>BLACK is built with a modern, scalable, and cross-platform technology stack, chosen for performance and developer experience. Our architecture is designed to be robust and maintainable.</p>
                 <ul class="list-none space-y-2 mt-4">
                     <li><strong>Framework:</strong> Flutter</li>
-                    <li><strong>Backend & Database:</strong> Firebase (Firestore, Authentication, Storage)</li>
-                    <li><strong>State Management:</strong> Provider / Riverpod</li>
+                    <li><strong>Primary Backend:</strong> Supabase (Authentication, PostgreSQL Database, Storage)</li>
+                    <li><strong>Secondary Backend:</strong> Firebase (Cloud Messaging for Push Notifications)</li>
+                    <li><strong>State Management:</strong> Provider</li>
                     <li><strong>Architecture:</strong> Clean Architecture Principles</li>
                 </ul>
+            </section>
+
+            <!-- Sustainability Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Our Sustainability Model</h2>
+                <p>
+                    To keep the BLACK platform free and accessible to all students, we need to cover our operational costs for servers, database hosting, and file storage. To achieve this, we've integrated non-intrusive native ads into the application. This model allows us to maintain and improve the service without charging subscription fees. We are committed to ensuring that ads are implemented thoughtfully and do not disrupt the core user experience.
+                </p>
             </section>
 
             <!-- Open Source & Contribution Section -->
@@ -143,7 +180,7 @@
                     BLACK is proudly open source. We welcome developers, designers, and students to contribute to the project. Whether it's fixing a bug, proposing a new feature, or improving the documentation, your help is valued. See the <a href="contributing.html">Contributing Guide</a> to get started.
                 </p>
                 <p class="mt-4">
-                    You can find our repository and contribution guidelines on <a href="https://github.com/loveucifer/ultimatelyitsblack" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                    You can find our repository and contribution guidelines on <a href="https://github.com/heptagramorg/BLACK" target="_blank" rel="noopener noreferrer">GitHub</a>.
                 </p>
             </section>
         </main>
