@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK - Open Source Academic Space</title>
+    <!-- Using Tailwind CSS for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using IBM Plex Mono font for a look similar to the reference site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /*
+         * The style remains minimalist, focusing on typography and generous spacing.
+         * The layout is a single, centered column for a focused, document-like feel.
+        */
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: #000000;
+            color: #E5E5E5; /* Light gray for body text */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Style for the main content sections */
+        .content-section {
+            margin-bottom: 4rem; /* 64px */
+        }
+
+        /* Headings for different sections */
+        .section-heading {
+            color: #999999; /* Medium gray for headings */
+            font-weight: 500;
+            margin-bottom: 1rem; /* 16px */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for list items to make them stand out */
+        .feature-list li {
+            margin-bottom: 0.75rem; /* 12px */
+        }
+
+        /* Links */
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        a:hover, .nav-link:hover {
+            color: #999999;
+            border-bottom-color: #999999;
+        }
+        
+        /* Navigation link specific styles */
+        .nav-link {
+             border-bottom: none;
+             color: #999999;
+             transition: color 0.3s ease;
+        }
+        .nav-link.active {
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+<body class="p-8 md:p-12 lg:p-16">
+
+    <!-- Main container is now a single, centered column -->
+    <div class="max-w-3xl mx-auto">
+
+        <!-- Site Header & Navigation -->
+        <header class="content-section">
+            <h1 class="text-white text-lg font-semibold tracking-wider">BLACK_</h1>
+            <p class="text-gray-400 mb-8">THE ULTIMATE OPEN SOURCE ACADEMIC SPACE</p>
+            <nav class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="contributing.html" class="nav-link">Contributing</a>
+                <a href="license.html" class="nav-link">License</a>
+                <a href="codebase.html" class="nav-link">Codebase</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- About Section -->
+            <section class="content-section">
+                <h2 class="section-heading">About The Project</h2>
+                <p>BLACK is a digital ecosystem making academic life simpler and more connected. Our team is passionate about creating innovative, open-source solutions that push the boundaries of what's possible for students. We centralize your notes, tasks, and community in one clean, powerful platform, built by students, for students.</p>
+            </section>
+
+            <!-- Core Philosophy Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Philosophy</h2>
+                <p>We believe that essential academic tools should be accessible, transparent, and community-driven. By making BLACK open source, we empower users to not only use the app but to shape its future. We prioritize privacy, performance, and a user-centric design that adapts to the real needs of students.</p>
+            </section>
+
+            <!-- Features Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Core Features</h2>
+                <ul class="list-none space-y-4 feature-list">
+                    <li>
+                        <strong>→ Unified Uploads & Management:</strong> Consolidate handwritten notes, PDFs, lecture slides, and images effortlessly. All your materials, in one place.
+                    </li>
+                    <li>
+                        <strong>→ Intelligent Cross-Platform Search:</strong> Instantly find notes by subject, tags, or user across all your uploaded content. Never lose track of a single piece of information.
+                    </li>
+                    <li>
+                        <strong>→ Integrated Task & Schedule Management:</strong> Organize your academic life with a built-in to-do list and calendar to manage tasks, assignments, and deadlines seamlessly.
+                    </li>
+                    <li>
+                        <strong>→ Collaborative & Community Forum:</strong> A dedicated space to ask questions, request notes from peers, share knowledge, and connect with other students from your university and beyond.
+                    </li>
+                    <li>
+                        <strong>→ Social Connectivity:</strong> Follow classmates and friends to stay updated with their public posts and shared notes, fostering a collaborative learning environment.
+                    </li>
+                     <li>
+                        <strong>→ Privacy-Focused:</strong> You have full control over what you share. Keep notes private, or make them public to help others. Your data is yours.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Technology Stack Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Technology Stack</h2>
+                <p>BLACK is built with a modern, scalable, and cross-platform technology stack, chosen for performance and developer experience.</p>
+                <ul class="list-none space-y-2 mt-4">
+                    <li><strong>Framework:</strong> Flutter</li>
+                    <li><strong>Backend & Database:</strong> Firebase (Firestore, Authentication, Storage)</li>
+                    <li><strong>State Management:</strong> Provider / Riverpod</li>
+                    <li><strong>Architecture:</strong> Clean Architecture Principles</li>
+                </ul>
+            </section>
+
+            <!-- Open Source & Contribution Section -->
+            <section class="content-section">
+                <h2 class="section-heading">Open Source</h2>
+                <p>
+                    BLACK is proudly open source. We welcome developers, designers, and students to contribute to the project. Whether it's fixing a bug, proposing a new feature, or improving the documentation, your help is valued. See the <a href="contributing.html">Contributing Guide</a> to get started.
+                </p>
+                <p class="mt-4">
+                    You can find our repository and contribution guidelines on <a href="https://github.com/loveucifer/ultimatelyitsblack" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                </p>
+            </section>
+        </main>
+        
+        <!-- Footer Quote -->
+        <footer>
+            <p class="text-gray-500 italic">"The reason to finish is to start something new." - Rick Rubin</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
